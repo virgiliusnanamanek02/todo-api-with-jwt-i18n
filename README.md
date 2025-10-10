@@ -6,6 +6,22 @@ Proyek ini juga mendukung **multi-bahasa (i18n)** melalui `Accept-Language` head
 
 ---
 
+## Clone Project
+
+### 1️⃣ Clone repository dari GitHub (gunakan SSH)
+```bash
+git clone git@github.com:virgiliusnanamanek02/todo-api-with-jwt-i18n.git
+```
+### 2️⃣ Masuk ke folder proyek
+```bash
+cd todo-api-with-jwt-i18n
+```
+
+### 3️⃣ Pastikan branch utama bernama master
+```bash
+git branch -M master
+```
+
 ## 🚀 Fitur Utama
 
 | Fitur                      | Deskripsi                                                                                                       |
@@ -89,13 +105,13 @@ src/
 ### 2️⃣ Buat Database
 
 ```sql
-CREATE DATABASE todo_db;
+CREATE DATABASE todo_app_db;
 ```
 
 ### 3️⃣ Update file `application.properties`
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/todo_db
+spring.datasource.url=jdbc:postgresql://localhost:5432/todo_app_db
 spring.datasource.username=postgres
 spring.datasource.password=yourpassword
 ```
