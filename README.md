@@ -311,7 +311,7 @@ Request boleh lanjut ke Controller
 
 ---
 
-## 🧱 Next Steps (untuk adikmu)
+## 🧱 Next Steps
 
 1. Buat `Task` module:
 
