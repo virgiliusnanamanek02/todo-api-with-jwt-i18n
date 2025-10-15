@@ -28,7 +28,7 @@ public class AppConfig {
 
 
     @Bean
-    public AcceptHeaderLocaleResolver localeResolver(){
+    public AcceptHeaderLocaleResolver localeResolver() {
         AcceptHeaderLocaleResolver resolver = new AcceptHeaderLocaleResolver();
         resolver.setDefaultLocale(Locale.ENGLISH);
         return resolver;

@@ -1,12 +1,12 @@
 package com.todo.todoapi.user.service.impl;
 
 import com.todo.todoapi.config.JwtUtils;
-import com.todo.todoapi.user.dto.LoginRequest;
-import com.todo.todoapi.user.dto.LoginResponse;
-import com.todo.todoapi.user.dto.RegisterRequest;
-import com.todo.todoapi.user.dto.UserResponse;
-import com.todo.todoapi.user.repository.UserRepository;
-import com.todo.todoapi.user.service.UserService;
+import com.todo.todoapi.user.dto.in.LoginRequest;
+import com.todo.todoapi.user.dto.out.LoginResponse;
+import com.todo.todoapi.user.dto.in.RegisterRequest;
+import com.todo.todoapi.user.dto.out.UserResponse;
+import com.todo.todoapi.user.repository.IUserRepository;
+import com.todo.todoapi.user.service.IUserService;
 import com.todo.todoapi.user.model.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -16,15 +16,15 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl implements IUserService {
 
-    private final UserRepository userRepository;
+    private final IUserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtUtils jwtUtils;
 
 
-    public UserServiceImpl(UserRepository userRepository, PasswordEncoder passwordEncoder, JwtUtils jwtUtils) {
-        this.userRepository = userRepository;
+    public UserServiceImpl(IUserRepository IUserRepository, PasswordEncoder passwordEncoder, JwtUtils jwtUtils) {
+        this.userRepository = IUserRepository;
         this.passwordEncoder = passwordEncoder;
         this.jwtUtils = jwtUtils;
     }

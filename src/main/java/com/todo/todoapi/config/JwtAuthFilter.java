@@ -1,6 +1,6 @@
 package com.todo.todoapi.config;
 
-import com.todo.todoapi.user.service.UserService;
+import com.todo.todoapi.user.service.IUserService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -19,11 +19,11 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
 
     private final JwtUtils jwtUtils;
-    private final UserService userService;
+    private final IUserService IUserService;
 
-    public JwtAuthFilter(JwtUtils jwtUtils, UserService userService) {
+    public JwtAuthFilter(JwtUtils jwtUtils, IUserService IUserService) {
         this.jwtUtils = jwtUtils;
-        this.userService = userService;
+        this.IUserService = IUserService;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
         }
 
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
-            UserDetails userDetails =  userService.loadUserEntityByUsername(username);
+            UserDetails userDetails = IUserService.loadUserEntityByUsername(username);
 
             if (jwtUtils.validateToken(token, userDetails)) {
                 UsernamePasswordAuthenticationToken authToken =

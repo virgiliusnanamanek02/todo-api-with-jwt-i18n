@@ -72,7 +72,7 @@ src/
 │   │   │   └── service/security/
 │   │   │       └── CustomUserDetailsServiceImpl.java
 │   │   │
-│   │   ├── task/                    # Untuk adikmu — CRUD Task
+│   │   ├── task/
 │   │   │   ├── controller/TaskController.java
 │   │   │   ├── model/Task.java
 │   │   │   ├── dto/TaskRequest.java
@@ -86,7 +86,6 @@ src/
 │       ├── application.properties
 │       ├── messages_en.properties   # Bahasa default (Inggris)
 │       ├── messages_id.properties   # Bahasa Indonesia
-│       └── schema.sql / data.sql (optional)
 │
 └── test/ (unit test)
 ```

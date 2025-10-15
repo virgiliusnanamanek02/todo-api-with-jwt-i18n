@@ -1,4 +1,4 @@
-package com.todo.todoapi.user.dto;
+package com.todo.todoapi.user.dto.in;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
