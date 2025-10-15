@@ -405,7 +405,7 @@ Keduanya saling berelasi dengan pola **One-to-Many** — satu user dapat memilik
 
 ## 🧩 License
 
-MIT — bebas digunakan untuk belajar & proyek pribadi.‍👧‍👦
+MIT — bisa dipakai untuk sumber pembelajaran
 
 ---
 
