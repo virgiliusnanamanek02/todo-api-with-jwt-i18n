@@ -405,7 +405,7 @@ Keduanya saling berelasi dengan pola **One-to-Many** — satu user dapat memilik
 
 ## 🧩 License
 
-MIT — bisa dipakai untuk sumber pembelajaran
+MIT — bisa dipakai untuk sumber pembelajaran springboot
 
 ---
 
